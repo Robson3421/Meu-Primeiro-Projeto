@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root{
+    --cor-primaria: #2C3639;
+    --cor-segundaria: #DCD7C9;
+    --cor-terciaria:#A27B5C;
+    --cor-houver: #3F4E4F;
+
+    --fonte-principal: 'Krona One', sans-serif;
+    --fonte-segundaria: 'Montserrat', sans-serif;
+    
+}
+ 
+
+ 
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+   
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);  /*cor de fudo no cado da pagina inteira*/
+    color: var(--cor-segundaria);  /*cor do texto*/
+}
+
+.titulo-destaque{
+    color: var(--cor-terciaria) /*cor do texto*/
+}
+
+.cabesalho{
+padding: 2% 0% 0% 15%;
+}
+
+.cabesalho__menu{
+    display: flex;
+    gap: 80px;
+ 
+}
+
+.cabesalho__menu__link{
+    font-family: var(--cor-primaria);  /*fonte do texto*/
+    font-weight: 600; /*peso do texto*/
+   font-size: 24px; /*tamanho do texto*/
+   color: var(--cor-terciaria);
+   text-decoration: none;
+}  
+
+.apresentacao{
+    padding: 5% 15%;
+    display: flex; /*iniciou uma flexbox*/
+    align-items: center; /*colocou o texto no centro da pagina*/
+    justify-content: space-between; /*da uma espaço de um elemento a outro*/
+    align-items: center; /*alinhou os botoes no centro*/
+}
+.apresentacao__conteudo{
+     width: 615px; /*tamnanho do texto*/
+    display: flex; /*iniciou uma flexbox*/
+    flex-direction: column; /* colocou o texto em coluna*/
+    gap: 40px; /*separou o texto*/
+}
+
+.apresentacao__conteudo__titulo{
+    font-size: 36px;  /*tamanho do texto*/
+    font-family: var(--fonte-principal);   /*fonte do texto*/
+}
+
+.apresentacao__conteudo__texto{
+    font-size: 24px;  /*tamanho do texto*/
+    font-family: var(--fonte-segundaria);  /*fonte do texto*/
+}
+
+.apresentacao__links{
+    display: flex; /*iniciou uma flexbox*/
+    flex-direction: column; /*colocou os botoes em coluna*/
+    justify-content: space-between; /*da uma espaço de um elemento a outro*/
+    align-items: center; /*alinhou os botoes no centro*/
+    gap: 32px; /*sempara o intens no caso separou um botao do outro*/
+}
+
+.apresentacao__links__subtitulo{
+font-family: var(--fonte-principal);  /*fonte do texto*/
+font-weight: 400;  /*peço da fonte no caso texto*/
+font-size: 24px;  /*tamanho do texto*/
+}
+
+.apresentacao__links__link{
+    display: flex; /*iniciou uma flexbox*/
+    justify-content: center; /*trouce os elementos para o centro*/
+    gap: 16px; /*sempara o intens no caso a imagem do texto do potao*/
+    border: 2px solid var(--cor-terciaria);   /*bodar dos botoes*/
+    width: 378px;   /* largura do bota*/
+    text-align: center;  /*colocar o texto em algum lugar no caso centro*/
+    border-radius: 8px; /*arendodar ou deixar as bodar quadradas*/
+    font-size: 24px;  /*tamanho do texto*/
+    font-weight: 600;  /*peço da fonte no caso texto*/
+    padding: 21.5px 0;
+    text-decoration: none; /*tirou o sublinhado no texto*/
+    color: var(--cor-segundaria);   /*cor do texto*/
+    font-family: var(--fonte-segundaria); /*fonte do texto*/
+    
+}
+
+.apresentacao__links__link:hover{ /* tudo que eu fizer aqui vai alterar o botao quando passar o mouse por cima*/
+    background-color: var(--cor-houver); /*alterando a cor do botao q passa o mouse por cima*/
+}
+
+.rodape{
+    color: var(--cor-primaria); /*cor do texto*/
+    background-color: var(--cor-terciaria);
+    padding: 24px; /* largura da borda da cor do fundo*/
+    text-align: center; /* centralizou o texto*/
+    font-family: var(--fonte-segundaria); /*fonte do texto*/
+    font-size:24px; /*tamanho do texto*/
+    font-weight: 400;  /*peso do texto*/ 
+    
+}
