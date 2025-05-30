@@ -116,3 +116,9 @@ font-size: 24px;  /*tamanho do texto*/
     font-weight: 400;  /*peso do texto*/ 
     
 }
+
+.imagem{
+   width: 40%;
+   height: 50%;
+   border: 3px solid var(--cor-terciaria);
+}
